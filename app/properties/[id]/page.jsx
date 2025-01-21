@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PropertyPage = () => {
+const PropertyPage = ({params }) => {
     return (
         <div>
-            hi from single property page MF!
+            hi from single property page MF! {params.id}
         </div>
     );
 };
