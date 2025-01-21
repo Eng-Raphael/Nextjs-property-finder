@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export const metadata = {
     title:'Property Finder',
@@ -9,7 +10,13 @@ export const metadata = {
 const HomePage = () => {
     return (
         <div className='text-2xl'>
-            Home page
+            <h1 className='text-2xl'>
+                Welcome to Property Finder
+            </h1>
+            <Link href={{
+                pathname: '/properties',
+                query: {name: 'test'}
+            }}>Go To Properties</Link>
         </div>
     );
 };
